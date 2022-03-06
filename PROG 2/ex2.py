@@ -22,8 +22,9 @@ def imprime_matriz(lista_de_1,n):
         for j in range(0,lim):
             for k in range(0,len(lista_de_1)):
                 #Vê na lista se o indice [i][j] atual existe nela se sim print 1 se não print 0
-                v1 = lista_de_1[k][0]
-                v2 = lista_de_1[k][2]
+                temp = lista_de_1[k].split(" ")
+                v1 = temp[0]
+                v2 = temp[1]
                 #print(f"\ni:{i} j:{j} l0:{v1} l2:{v2} sinal:{sinal}\n")
                 if((int(v1) ==int(i)) and ((int(v2) == int(j)))):
                     #print("entrei")
@@ -62,10 +63,12 @@ def criador_da_lista_de_1(vertices,arestas):
                     if(Busca(x,compoem_matriz_ad) == -1):
                         compoem_matriz_ad.append(x)
         contador+=1
-    compoem_matriz_ad.sort()
+    #compoem_matriz_ad.sort()
     #print("CRIADOR LISTA 1\n")
     #print(compoem_matriz_ad)
     return compoem_matriz_ad
+
+
 
 def busca_grafo(grafo_desejado):
     arquivo = open("grafos.ag","r")
@@ -493,7 +496,7 @@ def cubo(d):
                     aux = f"{v1} {v2}"
                     aux2 = f"{v2} {v1}"
                     if(Busca(aux2,arestas) == -1):
-                        arestas.append(aux)
+                        arestas.append(str(aux))
             diferente = 0
     return vertices, arestas
 
