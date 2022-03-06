@@ -1,0 +1,11 @@
+Faça um programa em Python que de acordo com uma opção 
+(a) Leia n, m inteiros n>0, m>=0 e as arestas ij, i>j em {0,1,2,...,n-1}=V
+      Peça o nome do grafo G. (dado pelo usuário)
+      Armazene G=(V,E) na memória.
+      Imprima a matriz de adjacências M{nxn}.
+(b) Peça o nome do grafo G e carregue e imprima a matriz de adjacências M{nxn} de G.
+
+
+   0 1
+0|0 1|
+1|1 0|

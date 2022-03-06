@@ -1,0 +1,8 @@
+
+peso = ([a , b],[a b])
+quadrado = ([1 , 2 , 3 , 4],[1 2 , 2 3 , 3 4 , 4 1])
+casinha = ([a , b , c , d , e],[a b , b c , a c , c d , d e , a e])
+estrela = ([a , b , c , d],[a b , a c , a d])
+triangulo = ([1 , 2 , 3],[1 2 , 2 3 , 3 1])
+pipa = ([a , b , c , d , e],[a b , a c , a d , a e , b c , b e , c d , d e])
+helice = ([a , b , c],[a b , a c])
